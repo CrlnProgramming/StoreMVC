@@ -1,12 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TradinPlatform.Basic.Models;
+using TradinPlatform.Basic;
 
 namespace WebApplication1.Controllers
 {
     public class SearchPageController: Controller
     {
-        public IActionResult Index()
+        private readonly IServiceItems _serviceItems;
+        public IActionResult Index(string searchQuery)
         {
-            return View();
+            if (string.IsNullOrWhiteSpace(searchQuery) || string.IsNullOrEmpty(searchQuery))
+            {
+                return RedirectToAction("Index");
+            }
+            var searchItems = _serviceItems.GetFilterProduct(searchQuery);
+            var model = _ma
+            return View(model);
         }
     }
 }

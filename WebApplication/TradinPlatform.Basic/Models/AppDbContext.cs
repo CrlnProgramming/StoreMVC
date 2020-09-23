@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WebApplication1.Entity;
 
-namespace WebApplication1.Models
+namespace TradinPlatform.Basic.Models
 {
     public class AppDbContext : DbContext
     {
@@ -10,6 +10,7 @@ namespace WebApplication1.Models
         {
         }
         public DbSet<Users> Users { get; set; }
+        public DbSet<Product> Products { get; set; }
 
     }
 }
