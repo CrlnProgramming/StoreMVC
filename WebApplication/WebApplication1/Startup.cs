@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebApplication1.Models;
 using Microsoft.EntityFrameworkCore;
+using TradinPlatform.Basic.Models;
 
 namespace WebApplication1
 {

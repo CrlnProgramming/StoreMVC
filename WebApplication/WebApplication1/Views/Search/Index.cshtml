@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
-<html lang="ru">
+﻿
+<html>
 @{
     ViewData["Title"] = "Search";
+    Layout = null;
 }
 <head>
-    <html lang="ru">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="~/css/Style.css" type="text/css">
@@ -13,36 +13,7 @@
 </head>
 <body>
     <header class="header__style header__search">
-        <div class="wrapper">
-            <div class="header__menu">
-                <div class="header__list search__header__menu max__header">
-                    <a href="Index.html"><div class="glav__logo glav__search__logo"></div></a>
-                    <ul class="list__style search__header__menu">
-                        <a href="Bisines.html"><li class="list__item header__search__item">Для бизнеса</li></a>
-                        <a href=""><li class="list__item header__search__item">Поддержка</li></a>
-                        <a href=""><li class="list__item header__search__item">Частые вопросы</li></a>
-                        <li class="list__item__kab__search">
-                            <div class="box__search__item">
-                                <a href=""><div class="basket"></div></a>
-                                <a href=""><div class="favorites"></div></a>
-                                <div class="Li__kab"></div>
-                                <div class="content__kab">
-                                    <a href=""><div class="title__kab">Имя пользователя</div></a>
-                                    <ul class="nav__kab">
-                                        <a href=""><li class="nav__kab__item"><img src="images/IMG__icons/Frame.svg" alt="">Мой личный кабинет</li></a>
-                                        <a href=""><li class="nav__kab__item"><img src="images/IMG__icons/box-2 1.svg" alt="">Мои заказы</li></a>
-                                        <a href=""><li class="nav__kab__item"><img src="images/IMG__icons/Frame-1.svg" alt="">Уведомления</li></a>
-                                        <a href=""><li class="nav__kab__item"><img src="images/IMG__icons/Frame-2.svg" alt="">Сообщения</li></a>
-                                        <a href=""><li class="nav__kab__item"><img src="images/IMG__icons/exit 1.svg" alt="">Выйти</li></a>
-                                    </ul>
-                                </div>
-                            </div>
-
-                </div>
-                </ul>
-            </div>
-        </div>
-        </div>
+        @await Html.PartialAsync("_HeaderPartial")
     </header>
     <main class="Search__main">
         @await Html.PartialAsync("MainSearchPartial")
@@ -52,10 +23,10 @@
         @await Html.PartialAsync("FooterSearchPartial")
     </footer>
 
-</body>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="~/js/Kabinet.js"></script>
-<script type="text/javascript" src="~/js/sort.js"></script>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="~/js/Kabinet.js"></script>
+    <script type="text/javascript" src="~/js/sort.js"></script>
+</body>
 </html>

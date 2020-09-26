@@ -10,7 +10,7 @@ namespace WebApplication1.Controllers
         }
         public IActionResult Bussines()
         {
-            return View("~/Views/Index.cshtml");
+            return View();
         }
     }
 }

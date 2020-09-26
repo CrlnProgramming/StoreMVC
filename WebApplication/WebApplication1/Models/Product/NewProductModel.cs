@@ -11,13 +11,13 @@ namespace WebApplication1.Models.Product
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Введите название продукта")]
-        [Display(Name = "Навзавние продукта*"]
+        [Display(Name = "Навзавние продукта*")]
         [StringLength(35)]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "Введите название продукта")]
-        [Display(Name = "Навзавние продукта*"]
+        /*[Required(ErrorMessage = "Введите название продукта")]
+        [Display(Name = "Навзавние продукта*")]
         [StringLength(35)]
-        public string Name { get; set; }
+        public string Name { get; set; }*/
     }
 }

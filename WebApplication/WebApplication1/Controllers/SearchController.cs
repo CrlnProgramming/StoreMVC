@@ -4,9 +4,9 @@ using TradinPlatform.Basic;
 
 namespace WebApplication1.Controllers
 {
-    public class SearchPageController: Controller
+    public class SearchController: Controller
     {
-        private readonly IServiceItems _serviceItems;
+        /*private readonly IServiceItems _serviceItems;
         public IActionResult Index(string searchQuery)
         {
             if (string.IsNullOrWhiteSpace(searchQuery) || string.IsNullOrEmpty(searchQuery))
@@ -14,8 +14,17 @@ namespace WebApplication1.Controllers
                 return RedirectToAction("Index");
             }
             var searchItems = _serviceItems.GetFilterProduct(searchQuery);
-            var model = _ma
-            return View(model);
+            //var model = _ma
+            return View(model);//MODEL
+        }*/
+        /*public IActionResult Index()
+        {
+            return View();
+        }*/
+        public IActionResult Index()
+        {
+            return View();
         }
+        
     }
 }

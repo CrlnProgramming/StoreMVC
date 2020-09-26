@@ -1,7 +1,9 @@
-﻿@{
+﻿@model TradinPlatform.Basic.Models.Product
+@{
     ViewData["Title"] = "Bussines";
+    Layout = null;
 }
-
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +17,7 @@
 </head>
 <body>
     <header class="header__style">
-        @Html.PartialAsync("HeaderPartial")
+        @Html.Partial("HeaderPartial")
     </header>
     <main>
         <div class="main__content bisines">
@@ -220,9 +222,9 @@
 
         </div>
 
-        
+
     </footer>
-    
+
 
     <script type="text/javascript" src="js/head.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -232,6 +234,5 @@
     <script type="text/javascript" src="js/swipe.js"></script>
     <script type="text/javascript" src="js/scroll__index.js"></script>
 
-
-
-    </html>
+</body>
+</html>
