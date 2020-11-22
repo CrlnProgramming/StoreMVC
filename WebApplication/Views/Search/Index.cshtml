@@ -1,0 +1,24 @@
+﻿<html>
+
+<head>
+    @await Component.InvokeAsync("_HeadPartial")
+</head>
+<body>
+    <header class="header__style header__search">
+        @await Component.InvokeAsync("_HeaderPartial")
+    </header>
+    <main class="Search__main">
+        @await Component.InvokeAsync("_MainPartilal")
+    </main>
+
+    <footer class="footer">
+        @await Component.InvokeAsync("_FooterPartial")
+    </footer>
+
+</body>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/Kabinet.js"></script>
+<script type="text/javascript" src="js/sort.js"></script>
+
+</html>

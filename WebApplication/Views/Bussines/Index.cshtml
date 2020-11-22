@@ -1,0 +1,165 @@
+﻿@{ 
+    ViewData["Title"] = "Bussines";
+}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css" type="text/css">
+    <link rel="stylesheet" href="Css/fonts.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+</head>
+<body>
+    <header class="header__style">
+        @Html.Partial("_HeaderPartial")
+    </header>
+    <main>
+        <div class="main__content bisines">
+            <div class="main__title__bisines">
+                <div class="big__title">
+                    ВЫГОДНО<h1 class="title__bisines">
+                        Сократим ваши издержки
+                    </h1>
+                </div>
+                <h2 class="little__title__bisines">Доля малого и среднего бизнеса в российской экономике составляет 21,9%, и как большому сообществу - нам необходимо быть вместе. Наша платформа позволяет получать выгоду от сотрудничесвта.</h2>
+            </div>
+            <div class="conteiter__scroll">
+                <div class="bottom__scroll__bisines" id='scroll_down'></div>
+            </div>
+        </div>
+
+        <div class="container__white">
+            <div class="container__bisines__and__suppliers">
+                <div class="polosa__bibines">
+                    <img class="img__bis__two" src="images/biss__two.webp" alt="">
+                    <div class="box__bis__content">
+                        <div class="title__two__bis">Для Бизнеса</div>
+                        <div class="little__title__bisnes__and__images">
+                            <div class="text__two__bis"><img src="images/pig.svg">Экономия средств при покупке расходных материалов</div>
+                            <div class="text__two__bis"><img src="images/money.svg">Увеличение прибыли и продаж</div>
+                            <div class="text__two__bis"><img src="images/proc.svg">Получение дополнительных скидок от поставщиков за счет количества </div>
+                            <div class="text__two__bis"><img src="images/people.svg">Увилечение надежных контрагентов</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="polosa__suppliers">
+                    <img class="img__supp__two" src="images/supp__two.webp" alt="">
+                    <div class="box__bis__content">
+                        <div class="title__two__supp">Для Поставщиков</div>
+                        <div class="little__title__bisnes__and__images">
+                            <div class="text__two__bis bisl"><img src="images/money-bag.svg">Увеличение оборотных средств</div>
+                            <div class="text__two__bis bisl"><img src="images/meeting-room.svg">Возможность предложить свой продукт крупным компаниям</div>
+                            <div class="text__two__bis bisl"><img src="images/money-cup.svg">Заработок на комиссии </div>
+                            <div class="text__two__bis bisl"><img src="images/crowdfunding.svg">Увеличение надежных контрагентов</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="conteiter__stat">
+                <div class="title__stat">
+                    Немного цифр
+                    <div class="back__title">Статистика</div>
+                </div>
+                <div class="box__numeral">
+                    <div class="content__numeral numeral__left">
+                        534
+                        <div class="little__numeral__text__left">компаний</div>
+                    </div>
+                    <div class="content__numeral numeral__middle">
+                        15
+                        <div class="little__numeral__text__middle">ОТ</div>
+                        <div class="little__numeral__text__middle__pr">%</div>
+                    </div>
+                    <div class="content__numeral numeral__right">
+                        20
+                        <div class="little__numeral__text__right__up">ДО</div>
+                        <div class="little__numeral__text__right__pr">%</div>
+                        <div class="little__numeral__text__right__down">издержек</div>
+                    </div>
+                </div>
+                <div class="down__text__stat">
+                    <div class="content__down__text">УЖЕ ИСПОЛЬЗУЮТ НАШ СЕРВИС</div>
+                    <div class="content__down__text">в среднем сокращает одна компания</div>
+                </div>
+            </div>
+
+            <div class="conteiner__interes">
+                <div class="title__interes">Возможно вас заинтересует</div>
+                <div class="slider__itneres">
+                    <div class="slider__item">
+                        <a href=""><div class="box__image__item"><img src="images/IMG__items/Rectangle 98-1.webp" class="img__slider__item"></div></a>
+                        <div class="like__img__slider__item"></div>
+                        <div class="name__slider__item">Бокалы для вина</div>
+                        <div class="priсe__slider__item">2 000 руб/шт</div>
+                        <a href=""><div class="buy__slider__item">Выбрать</div><</a>
+                    </div>
+                    <div class="slider__item">
+                        <a href=""><div class="box__image__item"><img src="images/IMG__items/Rectangle 98-2.webp" class="img__slider__item"></div></a>
+                        <div class="like__img__slider__item"></div>
+                        <div class="name__slider__item">Подушки</div>
+                        <div class="priсe__slider__item">800 руб/шт</div>
+                        <a href=""><div class="buy__slider__item">Выбрать</div></a>
+                    </div>
+                    <div class="slider__item">
+                        <a href=""><div class="box__image__item"><img src="images/IMG__items/Rectangle 98.webp" class="img__slider__item"></div></a>
+                        <div class="like__img__slider__item"></div>
+                        <div class="name__slider__item">Кресла</div>
+                        <div class="priсe__slider__item">1 200 руб/шт</div>
+                        <a href=""><div class="buy__slider__item">Выбрать</div></a>
+                    </div>
+                    <div class="slider__item">
+                        <a href=""><div class="box__image__item"><img src="images/IMG__items/Rectangle 98-1.webp" class="img__slider__item"></div></a>
+                        <div class="like__img__slider__item"></div>
+                        <div class="name__slider__item">Бокалы для вина</div>
+                        <div class="priсe__slider__item">2 000 руб/шт</div>
+                        <a href=""><div class="buy__slider__item">Выбрать</div><</a>
+                    </div>
+                    <div class="slider__item">
+                        <a href=""><div class="box__image__item"><img src="images/IMG__items/Rectangle 98-2.webp" class="img__slider__item"></div></a>
+                        <div class="like__img__slider__item"></div>
+                        <div class="name__slider__item">Подушки</div>
+                        <div class="priсe__slider__item">800 руб/шт</div>
+                        <a href=""><div class="buy__slider__item">Выбрать</div></a>
+                    </div>
+                    <div class="slider__item">
+                        <a href=""><div class="box__image__item"><img src="images/IMG__items/Rectangle 98.webp" class="img__slider__item"></div></a>
+                        <div class="like__img__slider__item"></div>
+                        <div class="name__slider__item">Кресла</div>
+                        <div class="priсe__slider__item">1 200 руб/шт</div>
+                        <a href=""><div class="buy__slider__item">Выбрать</div></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="conteiter__cooperation">
+                <img class="image__cooperation" src="images/image__vigoda.webp">
+                <div class="back__title__cooperation">Сотрудничество<div class="title__cooperation">Почему это выгодно?</div></div>
+                <div class="text__cooperation">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac auctor nibh fames integer tristique. Bibendum ac nibh tortor libero pretium, ac massa. Ac malesuada quis consectetur pretium lobortis est, cras pellentesque ipsum. Sodales et, egestas elit, tortor egestas quamLorem ipsum dolor sit amet, consectetur adipiscing elit. Ac auctor nibh fames integer tristique. Bibendum ac nibh tortor.</div>
+                <a href=""><div class="botton__cooperation">Стать соинвестором</div></a>
+            </div>
+
+            <div class="conteiner__what__cooperation">
+                <img class="what__coop__img" src="images/image__what.webp" alt="">
+                <div class="back__title__what__coop">
+                    ВОПРОСЫ
+                    <div class="little__title__what__coop">Остались вопросы – напишите нам</div>
+                </div>
+                <div class="text__what__coop">Если у вас есть какие-то вопросы, можете перейти в раздел частые вопросы, или же обратиться в поддержку сервиса.</div>
+                <a href=""><div class="botton__what__coop">Поддержка</div></a>
+            </div>
+    </main>
+    <footer class="footer">
+        @Html.Partial("_FooterPartial")
+    </footer>
+    @Html.Partial("_JSPartial")
+
+
+</body>
+    </html>

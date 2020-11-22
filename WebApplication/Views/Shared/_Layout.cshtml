@@ -1,0 +1,27 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/Style.css" type="text/css">
+    <link rel="stylesheet" href="~/css/fonts.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="~/css/reset.css">
+</head>
+<body>
+    @await Html.PartialAsync("_HeaderPartial")
+    <main>
+        <div class="preloarer">
+            @await Html.PartialAsync("LoginPartial")
+        </div>
+
+        <div class="main__content">
+            @await Html.PartialAsync("_MainPartial")
+            @RenderBody()
+        </div>
+
+        <footer class="footer">
+            @await Html.PartialAsync("_FooterPartial")
+        </footer>
+    </main>
+    @await Html.PartialAsync("_JSPartial")
+</body>
+</html>
